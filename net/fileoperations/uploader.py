@@ -7,6 +7,9 @@ from . import uploader_func
 
 class Uploader:
     def __init__(self, filenames, number_of_processes, loading_progress):
+        if number_of_processes < 1:
+            raise ValueError("Number of processes must be at least 1")
+
         self._stop_event = threading.Event()
         self._stop_event.set()
 
