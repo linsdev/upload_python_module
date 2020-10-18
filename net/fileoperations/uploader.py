@@ -1,3 +1,6 @@
+from . import datatypes
+
+
 class Uploader:
     def __init__(self, filenames, number_of_processes, loading_progress):
         pass
@@ -9,7 +12,7 @@ class Uploader:
         pass
 
     def get_report(self):
-        return None
+        return datatypes.UploadReport([], [])
 
     def is_active(self):
         return False
