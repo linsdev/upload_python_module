@@ -1,0 +1,12 @@
+#   Estimated  Task
+    time
+
+1)  [  5 min]  Create a task list
+2)  [ 10 min]  Estimate the time for all tasks
+3)  [180 min]  Research
+4)  [120 min]  Create a block diagram of the program logic and Use Case diagram
+5)  [ 15 min]  Create a module mock
+6)  [ 30 min]  Create Unit Tests
+7)  [180 min]  Implementation and get full Test Coverage
+
+    [ 9 h]
