@@ -26,7 +26,7 @@ def imap_next_thread(iter_queue, result_queue):
 
 def processing_thread(filenames, number_of_processes, loading_progress_queue,
                       iter_queue, result_queue, stop_event, uploaded_files):
-    stop_event.clear()
+
     progress_value = datatypes.UploadProgress(0, 0, total=len(filenames))
 
     pool = multiprocessing.Pool(number_of_processes)

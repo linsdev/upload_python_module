@@ -32,6 +32,7 @@ class Uploader:
         )
 
     def start(self):
+        self._stop_event.clear()
         self._imap_next_thread.start()
         self._processing_thread.start()
 
