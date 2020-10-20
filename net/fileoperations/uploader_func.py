@@ -40,7 +40,7 @@ def processing_thread(filenames, number_of_processes, loading_progress_queue,
         iter_queue.put_nowait(result_iter)
 
         while result_queue.empty():  # wait for a next uploaded file
-            if stop_event.is_set():
+            if stop_event.wait(0.1):
                 break  # go to exit the main loop
         else:
             ''' File uploaded '''
